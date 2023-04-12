@@ -1,5 +1,6 @@
 <!DOCTYPE html> 
 <!-- HALOOO -->
+<!-- Inii reii -->
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
