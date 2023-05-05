@@ -21,6 +21,8 @@ Route::get('/Login', function () {
     return view('Login');
 });
 
+// Route::get('/Register', [UserController::class, 'show'])->name('show')->middleware('guest');
+
 Route::get('/Register', function () {
     return view('Register');
 });
