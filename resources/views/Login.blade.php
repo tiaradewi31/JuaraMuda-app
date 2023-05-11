@@ -11,8 +11,8 @@
   <style>
     body{
       background: linear-gradient(to bottom, #213346, #9a465e);
-      background-size: cover;
-      background-repeat: repeat;
+      background-size: 100%;
+      /* background-repeat: no-repeat; */
       display: block;
       /* margin: 8px; */
     }
