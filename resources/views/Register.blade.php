@@ -11,7 +11,7 @@
   </head>
   <style>
     body{
-      background: linear-gradient(to bottom, #213346, #9a465e);
+      background: linear-gradient(to right, #213346, #9a465e);
       /* background-repeat: repeat; */
       /* display: block; */
       /* margin: 8px; */
@@ -54,7 +54,7 @@
                     </div>
                     <button class="w-100 btn btn-lg mt-4" style="background-color: #213346; font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF; " type="submit">Buat Akun</button>
                 </form>
-                <small class="d-block mt-4 mb-5" style="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #F6E7C0;">Sudah punya akun? <a class="text" style="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF;" href="/">Login
+                <small class="d-block mt-4 mb-5" style="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #F6E7C0;">Sudah punya akun? <a class="text" style="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF;" href="/Login">
                         Login
                         sekarang!</a></small>
             </main>
