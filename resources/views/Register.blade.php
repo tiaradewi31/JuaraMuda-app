@@ -39,8 +39,13 @@
                     @csrf
                     <div class="form-floating">
                         <input type="text" class="form-control rounded-top" name="name" id="name" required
-                            value="{{ old('name') }}" placeholder="Name">
+                            value="{{ old('uname') }}" placeholder="Uname">
                         <label for="name">Username</label>
+                    </div>
+                    <div class="form-floating" style="margin-top: 2%">
+                        <input type="text" class="form-control rounded-top" name="name" id="name" required
+                            value="{{ old('name') }}" placeholder="Name">
+                        <label for="name">Name</label>
                     </div>
                     <div class="form-floating" style="margin-top: 2%">
                         <input type="email" class="form-control " name="email" id="email" required
