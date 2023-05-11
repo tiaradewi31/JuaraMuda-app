@@ -22,7 +22,7 @@
     <div class="Logo text-center">
         <img src="img/Logo.png" alt="Logo JuaraMuda" style="width: 10%; padding-top: 5.5%;">
         <h3 class="mt-2 mb-2" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF;">JuaraMuda</h3>
-        <h1 class="v mt-3" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #F6E7C0";>Login</h1>
+        <h1 class="v mt-3" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #F6E7C0;">Login</h1>
     </div>
 
     <div class="row justify-content-center" style="margin-top: 3%">
@@ -43,7 +43,7 @@
                         <input type="password" class="form-control rounded-bottom" name="password" id="password" required placeholder="Password">
                         <label for="password">Password</label>
                     </div>
-                    <button class="w-100 btn btn-lg mt-4" style="background-color: #213346; font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF; " type="submit">Login</button>
+                    <button class="w-100 btn btn-lg mt-4" style="background-color: #213346; font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF; " type="submit"><b>Login<b></button>
                 </form>
                 <small class="d-block mt-4 mb-5" style="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #F6E7C0;">Belum punya akun? <a class="text" style="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF;" href="/Register">
                         Daftar

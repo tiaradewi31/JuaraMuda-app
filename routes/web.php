@@ -22,6 +22,9 @@ Route::get('/Register', [UserController::class, 'show'])->name('show')->middlewa
 
 Route::post('/Register', [UserController::class, 'simpandata'])->name('simpandata');
 
+Route::get('/about', function () {
+    return view('about');
+});
 
 // Route::get('/Register', function () {
 //     return view('Register');
