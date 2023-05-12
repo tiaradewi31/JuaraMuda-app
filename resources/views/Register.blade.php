@@ -12,9 +12,6 @@
   <style>
     body{
       background: linear-gradient(to right, #213346, #9a465e);
-      /* background-repeat: repeat; */
-      /* display: block; */
-      /* margin: 8px; */
     }
   </style>
   <body>
@@ -25,7 +22,7 @@
     </div>
     <div class="row justify-content-center" style="margin-top: 2%">
     @if ($errors->any())
-    <div class="alert w-100 btn btn-lg" style="background-color: rgb(136, 212, 255)" role="alert">
+    <div class="alert w-100 btn btn-lg" style="background-color: #9a465e" role="alert">
         <ul>
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>
@@ -38,9 +35,9 @@
                 <form action="" method="POST">
                     @csrf
                     <div class="form-floating">
-                        <input type="text" class="form-control rounded-top" name="name" id="name" required
-                            value="{{ old('uname') }}" placeholder="Uname">
-                        <label for="name">Username</label>
+                        <input type="text" class="form-control rounded-top" name="uname" id="uname" required
+                            value="{{ old('uname') }}" placeholder="uname">
+                        <label for="uname">Username</label>
                     </div>
                     <div class="form-floating" style="margin-top: 2%">
                         <input type="text" class="form-control rounded-top" name="name" id="name" required

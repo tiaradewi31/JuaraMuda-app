@@ -11,10 +11,6 @@
   <style>
     body{
       background: linear-gradient(to left, #213346, #9a465e);
-      background-size: 100%;
-      /* background-repeat: no-repeat; */
-      display: block;
-      /* margin: 8px; */
     }
   </style>
 
