@@ -26,6 +26,10 @@ Route::get('/about', function () {
     return view('about');
 });
 
+Route::get('/', function () {
+    return view('landingpage');
+});
+
 // Route::get('/Register', function () {
 //     return view('Register');
 // });

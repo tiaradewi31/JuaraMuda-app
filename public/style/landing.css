@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    background: linear-gradient(to bottom, #213346, #9a465e);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    /* margin: 8px; */
+}
+.container {
+    width: 80%;
+    margin-inline: auto;
+}
+.navbar .box-navbar {
+    display: flex;
+    justify-content: space-between;
+}
