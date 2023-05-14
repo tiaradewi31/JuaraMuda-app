@@ -80,7 +80,7 @@
               <img class="pic-1" src="img/Rei.jpg">
                 <div class="box-content">
                   <h3 class="title">Reisa Aulia Sodikin</h3>
-                  <span class="post">Scum Master</span>
+                  <span class="post">Scrum Master</span>
                   <ul class="social">
                     <li><a href="https://www.instagram.com/reisa257/"><i class="fa fa-instagram"></i></a></li>
                     <li><a href="mailto:cacachan257@gmail.com"><i class="fa fa-envelope"></i></a></li>

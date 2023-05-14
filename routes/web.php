@@ -26,8 +26,12 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/', function () {
+Route::get('/landingpage', function () {
     return view('landingpage');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
 });
 
 // Route::get('/Register', function () {
