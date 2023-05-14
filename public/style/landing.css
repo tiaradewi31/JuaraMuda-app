@@ -19,4 +19,12 @@ body {
 .navbar .box-navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.navbar .box-navbar .menu{
+    display: flex;
+    column-gap: 30px;
+}
+.menu-bar{
+    display: none;
 }

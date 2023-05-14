@@ -12,20 +12,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">     
   </head>
   <body>
-    <div class="navbar">
+    <header>
+      <div class="navbar">
         <div class="container">
             <div class="box-navbar">
                 <div class="logo">
-                    <h1><img src="img/Logo.png" alt="JuaraMuda" style="width:15%"></h1>
+                    <h1><img src="img/Logo.png" alt="JuaraMuda" style="width:6%"></h1>
                 </div>
                 <ul class="menu">
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Get Started</a></li>
                 </ul>
-                <i class="fa-solid fa-bars menu-bar"></i>
             </div>
         </div>
-    </div>
+      </div>
+    </header>
+    
     <script src="script/landing.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   </body>
