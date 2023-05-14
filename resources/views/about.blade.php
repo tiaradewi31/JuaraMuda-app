@@ -64,7 +64,7 @@
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="box16">
-              <img class="pic-1" src="https://www.w3schools.com/bootstrap4/img_avatar5.png">
+              <img class="pic-1" src="img/dipa.jpg">
                 <div class="box-content">
                   <h3 class="title">Difa Safrina Fadilla</h3>
                   <span class="post">Product Owner</span>
