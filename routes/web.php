@@ -34,6 +34,9 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
+Route::get('/profil', function () {
+    return view('profil');
+});
 // Route::get('/Register', function () {
 //     return view('Register');
 // });
