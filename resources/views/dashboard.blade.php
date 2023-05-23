@@ -134,6 +134,11 @@
             </div>
         </div>
       </div>
+      <ul class="menu" style="center">
+        <li class="menuu" >
+          <a class="nav-link" aria-current="page"  style= "color : white; padding-right: 20px; padding-top: 50px; text-decoration: none; list-style-type: none;" href="\"><b>See more in #KataMereka</b></a>
+        </li>
+      </ul>
     </div>
   </div>
 
