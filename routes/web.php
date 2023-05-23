@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\FormPostController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,9 +18,13 @@ use App\Http\Controllers\UserController;
 */
 
 
-Route::get('/Login', function () {
-    return view('Login');
-});
+// Route::get('/Login', function () {
+//     return view('Login');
+// });
+
+Route::get('/Login', [LoginController::class, 'login'])->name('login')->middleware('guest');
+
+Route::post('/Login', [LoginController::class, 'dologin'])->name('dologin');
 
 Route::get('/Register', [UserController::class, 'show'])->name('show')->middleware('guest');
 
@@ -37,6 +45,7 @@ Route::get('/dashboard', function () {
 Route::get('/profil', function () {
     return view('profil');
 });
-// Route::get('/Register', function () {
-//     return view('Register');
-// });
+
+Route::get('/katamereka',  [FormPostController::class, 'create'])->name('create');
+
+Route::post('/katamereka', [FormPostController::class, 'store']);

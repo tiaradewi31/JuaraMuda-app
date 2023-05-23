@@ -35,7 +35,7 @@ class LoginController extends Controller
         }
         auth()->login($user);
 
-        return redirect('/landingpage');
+        return redirect('/dashboard');
     }
 
     public function logout(Request $request)
