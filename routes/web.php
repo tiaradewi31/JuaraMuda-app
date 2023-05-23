@@ -46,6 +46,11 @@ Route::get('/profil', function () {
     return view('profil');
 });
 
+Route::get('/searchbeasiswa', function () {
+    return view('searchbeasiswa');
+});
+
+
 Route::get('/katamereka',  [FormPostController::class, 'create'])->name('create');
 
 Route::post('/katamereka', [FormPostController::class, 'store']);
