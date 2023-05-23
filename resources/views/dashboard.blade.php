@@ -74,6 +74,42 @@
       </div>
     </div>
 
+    <div class="container">
+    <div class="text-center" style="color: white; margin-top: 100px; padding-top: 30px; font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Poppins?query=Poppins); margin-bottom: 50px;">
+      <h3><b>#KataMereka</b>
+        <h3>
+    </div>
+  </div>
+
+
+  <div class="custom_container" style="background-color: #213346; border-radius: 60px; padding-top: 5%; padding-bottom: 5%; margin-left: 5%; margin-right: 5%; margin-bottom: 5%; font-family: 'Pridi'; src: url(https://fonts.google.com/specimen/Pridi?query=pridi);">
+    <div class="container text-justify pt-4"> 
+      <div class="row row-cols-2 row-cols-md-2 g-3">
+        <div class="col">
+          <!-- <div class="card h-100"> -->
+            <div class="card-body" style="background-color: #213346;">
+            <!-- <div class="card mb-3" style="max-width: 540px;"> -->
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/buttonbeasiswa.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body"  style="color: white;">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
+            <!-- </div> -->
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
     @include('footer')
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
