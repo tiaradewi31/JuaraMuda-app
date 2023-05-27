@@ -38,6 +38,9 @@ Route::get('/profil', function () {
     return view('profil');
 });
 
+Route::get('/pencaribeasiswa', function () {
+    return view('pencaribeasiswa');
+});
 // Route::get('/Register', function () {
 //     return view('Register');
 // });
