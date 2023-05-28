@@ -45,6 +45,10 @@ Route::get('/pencaribeasiswa', function () {
 Route::get('/searchbeasiswa', function () {
     return view('searchbeasiswa');
 });
+
+Route::get('/searchlomba', function () {
+    return view('searchlomba');
+});
 // Route::get('/Register', function () {
 //     return view('Register');
 // });
