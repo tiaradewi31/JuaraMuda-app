@@ -45,6 +45,7 @@
         </div>
       </header>
 
+<!-- showcase area start-->
       <div class="showcase-area">
         <div class="container">
             <div class="left">
@@ -66,8 +67,8 @@
             </div>
         </div>
       </div>
-    
-      <div class="showcase-area">
+
+      <!-- <div class="showcase-area">
         <div class="container">
             <div class="left">
                 <img src="img/juara.png" alt="whatisjuaramuda">
@@ -80,8 +81,22 @@
                 </div>
             </div>
         </div>
+      </div> -->
+
+<!-- what is juaramuda? start -->
+<section class="about" id="about">
+
+      <h1 class="heading"><span>What Is JuaraMuda?</span></h1>
+      <div class="row">
+        <div class="photo-container">
+          <img src="img/juara.png" alt="juara">
+          <h3></h3>
+        </div>
       </div>
-      
+
+</section>
+<!-- what is juaramuda? done -->
+
     </div>
   </main>
   @include('footer')
