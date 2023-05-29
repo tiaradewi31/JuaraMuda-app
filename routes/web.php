@@ -18,9 +18,9 @@ use App\Http\Controllers\PostController;
 */
 
 
-Route::get('/Login', function () {
-    return view('Login');
-});
+Route::get('/Login', [LoginController::class, 'login'])->name('login')->middleware('guest');
+
+Route::post('/Login', [LoginController::class, 'dologin'])->name('dologin');
 
 Route::get('/Register', [UserController::class, 'show'])->name('show')->middleware('guest');
 
@@ -34,7 +34,7 @@ Route::get('/landingpage', function () {
     return view('landingpage');
 });
 
-Route::get('/dashboard', function () {
+Route::get('/home', function () {
     return view('dashboard');
 });
 
