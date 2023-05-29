@@ -33,25 +33,30 @@ class FormPostController extends Controller
      */
     public function store(Request $request)
     {
+        // return $request->file('image')->store('post-image');
+
         $request->validate([
             'title' => ['required'],
             'katamu' => ['required'],
+            'image' => ['required'],
         ]);
 
         $post = new post();
-        $post->user_id = Auth::user()->id;
+        // $post->user_id = Auth::user()->id;
         $post->title = $request->title;
         $post->katamu = $request->katamu;
         
-        $extension = $request->file("perangkat")->getClientOriginalExtension();
-        $stringPaperFormat = str_replace(" ", "", $request->input('judul'));
-        $fileName = $stringPaperFormat . "." . $extension;
-        $FileEnconded =  File::get($request->perangkat);
-        Storage::disk('local')->put('public/perangkat' . $fileName, $FileEnconded);
+        // $extension = $request->file("image")->getClientOriginalExtension();
+        // $stringPaperFormat = str_replace(" ", "", $request->input('title'));
+        // $fileName = $stringPaperFormat . "." . $extension;
+        // $FileEnconded =  File::get($request->cover);
+        // Storage::disk('local')->put('public/image' . $fileName, $FileEnconded);
 
-        $post->perangkat = $fileName;
+        // $post->image = $fileName;
 
         $post->save();
+
+        // $request['user_id']=auth()->user()->id;
 
         return redirect('/');
     }

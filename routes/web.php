@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\FormPostController;
+use App\Http\Controllers\PostController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -49,6 +53,11 @@ Route::get('/searchbeasiswa', function () {
 Route::get('/searchlomba', function () {
     return view('searchlomba');
 });
-// Route::get('/Register', function () {
-//     return view('Register');
-// });
+
+Route::get('/katamereka',  [FormPostController::class, 'create'])->name('create')->middleware('guest');
+
+Route::post('/katamereka', [FormPostController::class, 'store']);
+
+Route::get('/katamereka/posts/checkSlug', [PostController::class, 'checkSlug'])->name('checkSlug');
+
+Route::resource('/katamereka/posts', PostController::class)->middleware('guest');

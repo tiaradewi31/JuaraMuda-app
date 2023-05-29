@@ -40,22 +40,29 @@
         <h2 style="padding: 1% 0% 1% 5%; font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #F6E7C0;">Post Pengalamanmu di #KataMereka</h2>
     </div>
 
-    <div class="row">
-        <div class="col">
-            <form method="POST" action="" enctype="multipart/form-data">
-                @csrf
-                <div class="mb-3" style="color: #F6E7C0;">
-                  <label for="title" class="form-label">Title</label>
-                  <input class="form-control" name="title" id="title" placeholder="Pengalaman Lomba X" value="{{ old('title') }}" required>
-                  <div class="invalid-feedback" style="padding-bottom: 2%;">
-                    Wajib diisi
-                  </div>
-                </div>
-            </form>
+    <form method="POST" action="" enctype="multipart/form-data">
+    @csrf
+      <div class="mb-3" style="color: #F6E7C0;">
+        <label for="title" class="form-label">Title</label>
+        <input class="form-control" name="title" id="title" placeholder="Pengalaman Lomba X" value="{{ old('title') }}" required>
+        <div class="invalid-feedback" style="padding-bottom: 2%;">
+          Wajib diisi
         </div>
-        <div class="col">
-            Column
+      </div>
+      <div class="mb-3" style="color: #F6E7C0;">
+        <label for="slug" class="form-label">Slug</label>
+        <input class="form-control" name="slug" id="slug" value="{{ old('slug') }}" required>
+        <div class="invalid-feedback" style="padding-bottom: 2%;">
+          Wajib diisi
         </div>
+      </div>
+      <div class="mb-3" style="color: #F6E7C0;">
+        <label for="image"  class="form-label">Image</label>
+        <input class="form-control form-control-sm" id="image" name= "image" type="file">
+        <div class="invalid-feedback" style="padding-bottom: 2%;">
+          Wajib diisi
+        </div>
+      </div>
         <!-- <div class="mb-3" style="color: #F6E7C0;">
             <label for="category" class="form-label">Category</label>
             <select class="form-select" name="category-id">
@@ -67,20 +74,30 @@
         <div class="mb-3" style="color: #F6E7C0;">
             <label for="katamu" class="form-label">#KataMu</label>
             <input id="katamu" type="hidden" name="katamu" value="{{ old('katamu') }}" required>
-            <trix-editor input="b" style="color: #F6E7C0;"></trix-editor>
+            <trix-editor input="katamu" style="color: #F6E7C0;"></trix-editor>
         </div>
-    </div>
-    <div class="hstack gap-3" style="padding-top: 1%; padding-bottom:5%;">
-        <button class="btn btn btn-secondary btn-lg" type="submit"> Save </button>
+        <div class="hstack gap-3" style="padding-top: 1%; padding-bottom:5%;">
+          <button class="btn btn btn-secondary btn-lg" type="submit"> Create Postingan #KataMereka </button>
+        </div>
+    </form>
     </div>
   </div>
 
-  
-  
-  @include('footer')
+    <script>
+      const title = document.querySelector('#title');
+      const slug = document.querySelector('#slug');
+
+      title.addEventListener('change', function(){
+        fetch('/katamereka/checkSlug?title=' + title.value )
+        .then(response => response.json())
+        .then(data => slug.value = data.slug)
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
+    @include('footer')
   </body>
 </html>

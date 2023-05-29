@@ -13,9 +13,13 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->references('id')->on('users')->cascadeOnUpdate()->cascadeOnDelete();
+            // $table->foreignId('user_id')->references('id')->on('users')->cascadeOnUpdate()->cascadeOnDelete();
             $table->string('title');
-            $table->string('katamu');
+            $table->string('slug');
+            // $table->text('excerpt');
+            $table->string('image')->nullable();
+            $table->longtext('katamu');
+            $table->timestamp('published_at')->nullable();
             $table->timestamps();
         });
     }

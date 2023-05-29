@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use \Cviebrock\EloquentSluggable\Services\SlugService;
 
 class PostController extends Controller
 {
@@ -11,7 +12,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        return view('katamereka');
     }
 
     /**
@@ -60,5 +61,11 @@ class PostController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+
+    public function checkSlug(Request $request)
+    {
+        $slug = SlugService::checkSlug(Post::class, 'slug', $request->title);
+        return response()->json(['slug' => $slug]);
     }
 }
