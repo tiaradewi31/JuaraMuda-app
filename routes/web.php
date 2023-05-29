@@ -18,11 +18,11 @@ use App\Http\Controllers\PostController;
 */
 
 
-Route::get('/Login', [LoginController::class, 'login'])->name('login')->middleware('guest');
+Route::get('/Login', [LoginController::class, 'login'])->name('login')->middleware('auth');
 
 Route::post('/Login', [LoginController::class, 'dologin'])->name('dologin');
 
-Route::get('/Register', [UserController::class, 'show'])->name('show')->middleware('guest');
+Route::get('/Register', [UserController::class, 'show'])->name('show')->middleware('auth');
 
 Route::post('/Register', [UserController::class, 'simpandata'])->name('simpandata');
 
@@ -54,10 +54,10 @@ Route::get('/searchlomba', function () {
     return view('searchlomba');
 });
 
-Route::get('/katamereka',  [FormPostController::class, 'create'])->name('create')->middleware('guest');
+Route::get('/katamereka',  [FormPostController::class, 'create'])->name('create')->middleware('auth');
 
 Route::post('/katamereka', [FormPostController::class, 'store']);
 
 Route::get('/katamereka/posts/checkSlug', [PostController::class, 'checkSlug'])->name('checkSlug');
 
-Route::resource('/katamereka/posts', PostController::class)->middleware('guest');
+Route::resource('/katamereka/posts', PostController::class)->middleware('auth');

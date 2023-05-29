@@ -51,7 +51,7 @@
       </div>
       <div class="mb-3" style="color: #F6E7C0;">
         <label for="slug" class="form-label">Slug</label>
-        <input class="form-control" name="slug" id="slug" value="{{ old('slug') }}" required>
+        <input class="form-control" name="slug" id="slug" required>
         <div class="invalid-feedback" style="padding-bottom: 2%;">
           Wajib diisi
         </div>
@@ -87,7 +87,7 @@
       const title = document.querySelector('#title');
       const slug = document.querySelector('#slug');
 
-      title.addEventListener('change', function(){
+      title.addEventListener('change', function() {
         fetch('/katamereka/checkSlug?title=' + title.value )
         .then(response => response.json())
         .then(data => slug.value = data.slug)
