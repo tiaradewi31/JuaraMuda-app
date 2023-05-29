@@ -27,7 +27,7 @@
       }
 </style>
 <body>
-  <main>  
+  <main>
     <div class="big-wrapper">
       <header>
         <div class="container">
@@ -82,8 +82,8 @@
         </div>
       </div>
       
-      @include('footer')
     </div>
   </main>
+  @include('footer')
 </body>
 </html>
