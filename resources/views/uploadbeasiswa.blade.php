@@ -40,7 +40,7 @@
         <h2 style="padding: 1% 0% 1% 5%; font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #F6E7C0;">Post Pengalamanmu di #KataMereka</h2>
     </div>
 
-    <form method="POST" action="" enctype="multipart/form-data">
+    <form method="POST" action="/" enctype="multipart/form-data">
     @csrf
       <div class="mb-3" style="color: #F6E7C0;">
         <label for="title" class="form-label">Title</label>
