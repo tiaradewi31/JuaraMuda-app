@@ -6,7 +6,10 @@
     <link rel="icon" href="img/Logo.png" type = "image/x-icon">    
     <title>JuaraMuda | Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   </head>
   <style>
     body{
@@ -16,7 +19,7 @@
 
   <body>
     <div class="Logo text-center">
-        <img src="img/Logo.png" alt="Logo JuaraMuda" style="width: 10%; padding-top: 5.5%;">
+        <img src="img/Logo.png" alt="Logo JuaraMuda" style="width: 10%; padding-top: 5.5%; font-weight: 600" >
         <h3 class="mt-2 mb-2" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF;">JuaraMuda</h3>
         <h1 class="v mt-3" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #F6E7C0;">Login</h1>
     </div>

@@ -38,8 +38,8 @@ Route::get('/profil', function () {
     return view('profil');
 });
 
-Route::get('/pencaribeasiswa', function () {
-    return view('pencaribeasiswa');
+Route::get('/postingan', function () {
+    return view('postingan');
 });
 
 Route::get('/searchbeasiswa', function () {
