@@ -45,6 +45,7 @@ class FormPostController extends Controller
         // $post->user_id = Auth::user()->id;
         $post->title = $request->title;
         $post->slug = \Str::slug($request->title);
+        $post->category_id = $request->category_id;
         $post->katamu = $request->katamu;
         
         // $extension = $request->file("image")->getClientOriginalExtension();

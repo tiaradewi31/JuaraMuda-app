@@ -51,7 +51,7 @@
       </div>
       <div class="mb-3" style="color: #F6E7C0;">
         <label for="slug" class="form-label">Slug</label>
-        <input class="form-control" name="slug" id="slug" required>
+        <input class="form-control" name="slug" id="slug">
         <div class="invalid-feedback" style="padding-bottom: 2%;">
           Wajib diisi
         </div>
@@ -63,14 +63,14 @@
           Wajib diisi
         </div>
       </div>
-        <!-- <div class="mb-3" style="color: #F6E7C0;">
-            <label for="category" class="form-label">Category</label>
-            <select class="form-select" name="category-id">
-                <option selected>#KataMereka Category</option>
-                <option value="1">#KataMereka-Beasiswa</option>
-                <option value="2">#KataMereka-Lomba</option>
-            </select>
-        </div> -->
+      <div class="mb-3" style="color: #F6E7C0;">
+        <label for="category" class="form-label">Category</label>
+          <select class="form-select" name="category-id">
+            @foreach (as)
+              <option value="{{$category->id}}">{{$category->name}}</option>
+            @endforeach
+          </select>
+      </div>
         <div class="mb-3" style="color: #F6E7C0;">
             <label for="katamu" class="form-label">#KataMu</label>
             <input id="katamu" type="hidden" name="katamu" value="{{ old('katamu') }}" required>
@@ -82,16 +82,25 @@
     </form>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <script>
-      const title = document.querySelector('#title');
-      const slug = document.querySelector('#slug');
-
-      title.addEventListener('change', function() {
-        fetch('/katamereka/checkSlug?title=' + title.value )
-        .then(response => response.json())
-        .then(data => slug.value = data.slug)
+      $('#title').change(function(e) {
+        $.get('{{ url('check_slug') }}', 
+        { 'title': $(this).val() }, 
+        function( data ) {
+          $('#slug').val(data.slug);
+        });
       });
+
+      // const title = document.querySelector('#title');
+      // const slug = document.querySelector('#slug');
+
+      // title.addEventListener('change', function() {
+      //   fetch('/katamereka/checkSlug?title=' + title.value )
+      //   .then(response => response.json())
+      //   .then(data => slug.value = data.slug)
+      // });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">

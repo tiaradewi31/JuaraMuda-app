@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Category;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use \Cviebrock\EloquentSluggable\Services\SlugService;
 
@@ -11,9 +13,14 @@ class PostController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('katamereka');
+        $Keyword = $request->Keyword;
+        $posts = Post::where('title', 'LIKE', '%' . $Keyword . '%')
+                // ->orwhere('category', 'LIKE', '%' . $Keyword . '%')             
+                ->paginate(6);
+
+        return view ('posting', ['posts' => $posts]);
     }
 
     /**
@@ -35,9 +42,20 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Post $post, $slug)
     {
-        //
+        $title = 'Single Post';
+        // $post = Post::findOrFail($slug);
+        // return view('katamereka', compact('post'));
+        // return view('katamereka', ['posts'=>$posts]);
+        $post = DB::table('posts')->where('slug', $slug)->first();
+        // $post = Post::all();
+        return view('katamereka', compact('title','post'));
+        // return view('katamereka', ['post'=> $post]);
+        // return view ('katamereka', [
+        //     "title" => "Single Post",
+        //     "posts" => Post::find($id) 
+        // ]);
     }
 
     /**
