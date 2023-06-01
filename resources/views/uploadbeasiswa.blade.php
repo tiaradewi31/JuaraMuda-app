@@ -9,8 +9,6 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.0/dist/trix.css">
-    <script type="text/javascript" src="https://unpkg.com/trix@2.0.0/dist/trix.umd.min.js"></script>
   </head>
   <style>
     body{
@@ -40,7 +38,7 @@
         <h2 style="padding: 1% 0% 1% 5%; font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #F6E7C0;">Post Pengalamanmu di #KataMereka</h2>
     </div>
 
-    <form method="POST" action="/" enctype="multipart/form-data">
+    <form method="POST" action="" enctype="multipart/form-data">
     @csrf
       <div class="mb-3" style="color: #F6E7C0;">
         <label for="title" class="form-label">Title</label>
@@ -50,7 +48,7 @@
         </div>
       </div>
       <div class="mb-3" style="color: #F6E7C0;">
-        <label for="slug" class="form-label">Slug</label>
+        <label for="slug" class="form-label" placeholder="Klik dua kali">Slug</label>
         <input class="form-control" name="slug" id="slug">
         <div class="invalid-feedback" style="padding-bottom: 2%;">
           Wajib diisi
@@ -65,20 +63,19 @@
       </div>
       <div class="mb-3" style="color: #F6E7C0;">
         <label for="category" class="form-label">Category</label>
-          <select class="form-select" name="category-id">
-            @foreach (as)
+          <select class="form-select" name="category_id">
+            @foreach ($categories as $category)
               <option value="{{$category->id}}">{{$category->name}}</option>
             @endforeach
           </select>
       </div>
-        <div class="mb-3" style="color: #F6E7C0;">
-            <label for="katamu" class="form-label">#KataMu</label>
-            <input id="katamu" type="hidden" name="katamu" value="{{ old('katamu') }}" required>
-            <trix-editor input="katamu" style="color: #F6E7C0;"></trix-editor>
-        </div>
-        <div class="hstack gap-3" style="padding-top: 1%; padding-bottom:5%;">
-          <button class="btn btn btn-secondary btn-lg" type="submit"> Create Postingan #KataMereka </button>
-        </div>
+      <div class="mb-3">
+        <label for="katamu" class="form-label" style="color: #F6E7C0;">#katamu</label>
+        <textarea class="form-control" rows="10" id="katamu" input="katamu" name="katamu" value="{{ old('katamu') }}" require></textarea>
+      </div>
+      <div class="hstack gap-3" style="padding-top: 1%; padding-bottom:5%;">
+        <button class="btn btn btn-secondary btn-lg" type="submit"> Create Postingan #KataMereka </button>
+      </div>
     </form>
     </div>
   </div>
@@ -92,21 +89,11 @@
           $('#slug').val(data.slug);
         });
       });
-
-      // const title = document.querySelector('#title');
-      // const slug = document.querySelector('#slug');
-
-      // title.addEventListener('change', function() {
-      //   fetch('/katamereka/checkSlug?title=' + title.value )
-      //   .then(response => response.json())
-      //   .then(data => slug.value = data.slug)
-      // });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    
     @include('footer')
   </body>
 </html>

@@ -8,6 +8,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\FormPostController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\ProfilController;
 use App\Models\Post;
 
 /*
@@ -30,6 +31,8 @@ Route::get('/Register', [UserController::class, 'show'])->name('show')->middlewa
 
 Route::post('/Register', [UserController::class, 'simpandata'])->name('simpandata');
 
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+
 Route::get('/about', function () {
     return view('about');
 });
@@ -42,13 +45,11 @@ Route::get('/home', function () {
     return view('dashboard');
 });
 
-Route::get('/profil', function () {
-    return view('profil');
-});
+Route::get('/profil',[ProfilController::class, 'show'])->name('show')->middleware('auth');
 
-Route::get('/postingan', [PostController::class, 'index'])->name('index');
+Route::get('/postingan', [PostController::class, 'index'])->name('index')->middleware('auth');
 
-Route::get('/postingan/{id}', [PostController::class, 'show'])->name('show');
+Route::get('/postingan/{id}', [PostController::class, 'show'])->name('show')->middleware('auth');
 
 Route::get('/searchbeasiswa', [PostController::class, 'index'])->name('index');
 
@@ -56,9 +57,11 @@ Route::get('/searchlomba', function () {
     return view('searchlomba');
 });
 
-Route::get('/katamereka',  [FormPostController::class, 'create'])->name('create')->middleware('guest');
+Route::get('/katamereka',  [FormPostController::class, 'create'])->name('create')->middleware('auth');
 
-Route::post('/katamereka', [FormPostController::class, 'store']);
+Route::post('/katamereka', [FormPostController::class, 'store'])->middleware('auth');
+
+Route::get('/postingan/{post}/edit', [FormPostController::class, 'edit'])->name('edit')->middleware('auth');
 
 // Route::get('/katamereka/posts/checkSlug', [PostController::class, 'checkSlug'])->name('checkSlug');
 
@@ -69,7 +72,9 @@ Route::get('check_slug', function () {
     return response()->json(['slug' => $slug]);
 }); 
 
-Route::post('/', function () {
+Route::post('/katamereka/posts', function () {
     App\Models\Post::create(['title' => request('title')]);
     return redirect()->back();  
 });
+
+Route::get('/postingan/{slug}/delete', [FormPostController::class, 'delete'])->name('delete')->middleware('auth');

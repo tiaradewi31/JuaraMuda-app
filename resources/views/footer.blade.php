@@ -77,13 +77,13 @@
         </a></li>
     </ul>
     <ul class="menu">
-      <li class="menu__item"><a class="menu__link" href="#">#KataMereka</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">About Us</a></li>
+      <li class="menu__item"><a class="menu__link" href="/postingan">#KataMereka</a></li>
+      <li class="menu__item"><a class="menu__link" href="/about">About Us</a></li>
       <li class="menu__item"><a class="menu__link" href="#">Beasiswa</a></li>
       <li class="menu__item"><a class="menu__link" href="#">Lomba</a></li>
 
     </ul>
-    <p>&copy;2021 #TheChallengers | All Rights Reserved</p>
+    <p>&copy;2023 #TheChallengers | All Rights Reserved</p>
   </footer>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

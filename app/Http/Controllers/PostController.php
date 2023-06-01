@@ -45,17 +45,8 @@ class PostController extends Controller
     public function show(Post $post, $slug)
     {
         $title = 'Single Post';
-        // $post = Post::findOrFail($slug);
-        // return view('katamereka', compact('post'));
-        // return view('katamereka', ['posts'=>$posts]);
         $post = DB::table('posts')->where('slug', $slug)->first();
-        // $post = Post::all();
         return view('katamereka', compact('title','post'));
-        // return view('katamereka', ['post'=> $post]);
-        // return view ('katamereka', [
-        //     "title" => "Single Post",
-        //     "posts" => Post::find($id) 
-        // ]);
     }
 
     /**

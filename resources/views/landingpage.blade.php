@@ -38,8 +38,8 @@
 
           <div class="links">
             <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#" class="btn">Get Started</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/Login" class="btn">Get Started</a></li>
             </ul>
           </div>
         </div>

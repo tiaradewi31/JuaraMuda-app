@@ -38,13 +38,15 @@
 </div>
     <div class="container text-center">
         <img src="img/fotoprofil.png" alt="foto profil" style="width: 15%; padding-top: 5%;">
-        <h1 class="v mt-3" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF";> <b> @Usser Name</b> </h1>
-          <p1 class="v mt-3" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF";> <br> Wonwoo </br> </p1>
-          <p2 class="v mt-3" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF";> <br> sebong@gmail.com</br> </p2>
+        <h1 class="v mt-3" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF";><b>{{ Auth::user()->uname }}</b></h1>
+          <p1 class="v mt-3" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF";>{{ Auth::user()->name }}</p1>
+            <br>
+            <br>
+          <p2 class="v mt-3" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF";>{{ Auth::user()->email }}</p2>
 
         
           <div class="card mt-5 text-center" style="margin:auto; background-color: #AF4A61; border-radius: 25px; width:200px;">
-            <button type="button" class="btn btn-outline-light"> Log Out</button>  
+            <button href="{{ route('logout') }}" type="button" class="btn btn-outline-light"> Log Out</button>  
           </div>
     </div>  
     
