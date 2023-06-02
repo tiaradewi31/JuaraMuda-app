@@ -51,7 +51,9 @@ Route::get('/postingan', [PostController::class, 'index'])->name('index')->middl
 
 Route::get('/postingan/{id}', [PostController::class, 'show'])->name('show')->middleware('auth');
 
-Route::get('/searchbeasiswa', [PostController::class, 'index'])->name('index');
+Route::get('/searchbeasiswa', function() {
+    return view('searchbeasiswa');
+});
 
 Route::get('/searchlomba', function () {
     return view('searchlomba');

@@ -1,4 +1,4 @@
-<header class="navbar navbar-expand-lg navbar-dark bd-navbar" style= "background-color :#213346">
+<header class="navbar fixed-top navbar-expand-lg navbar-dark bd-navbar" style= "background-color :#213346">
     <nav class="container bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
         <a class="navbar-brand" href="\homepage">
             <img src="img/Logonavbar.png"  alt="" width="35%;">
@@ -9,11 +9,11 @@
         
            <div class="navMenu text-end">
                 <ul class="navbar-nav">
-                    <li class="nav-item profil">
-                        <a class="navbar-brand" href="\profil">
-                            <img src="img/fotoprofil.png"  alt="" width="35%">
-                        </a> 
+                    @auth
+                    <li class="nav-item">
+                        <h4><a class="nav-link" style= "color : black; padding-top: 10px;" href="\profil"><b>Welcome Back, {{ auth()->user()->name }} </b></a></h4>
                     </li>
+                    @endauth
                 </ul>
             </div>
         
