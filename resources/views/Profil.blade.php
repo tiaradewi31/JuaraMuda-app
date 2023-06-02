@@ -37,16 +37,26 @@
     }
   </script>
 </div>
-    <div class="container text-center">
+    <div class="container text-center mt-5">
+      <h1 class="text-center" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF;">Hai, Welcome</h1>
+      <br>
         <h1 class="v mt-3" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF";><b>{{ Auth::user()->uname }}</b></h1>
           <h3 class="v mt-3" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF";>{{ Auth::user()->name }}</h3>
             <br>
             <br>
-          <p2 class="v mt-3" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF";>{{ Auth::user()->email }}</p2>
+          <h4 class="v mt-3" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF";>{{ Auth::user()->email }}</h4>
 
         
-          <div class="card mt-5 text-center" style="margin:auto; background-color: #AF4A61; border-radius: 25px; width:200px;">
-            <button href="{{ route('logout') }}" type="button" class="btn btn-outline-light"> Log Out</button>  
+          <div class="card mt-5 text-center" style="margin:auto; background-color: #AF4A61; border-radius: 25px; width:200px; font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF">
+            <!-- <button href="{{ route('logout') }}" type="button" class="btn btn-outline-light"> Log Out</button>   -->
+            <a href="{{ route('logout') }}" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #213346">
+              <div class="d-flex align-items-center pb-1" id="tooltips-container">
+                <div class="w-100 ms-2">
+                  <h4 class="mb-1" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #F6E7C0;">Log Out</h4>
+                </div>
+                <i class="mdi mdi-chevron-right h2"></i>
+              </div>
+            </a>
           </div>
     </div>  
     

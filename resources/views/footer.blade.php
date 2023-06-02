@@ -68,19 +68,22 @@
     <div class="footer-content text-center" style= "margin-top: 25px">
             <img src="img/Logo.png"  alt="" width="200">
             <p>
-    <ul class="social-icon">
-       <li class="social-icon__item"><a class="social-icon__link" href="#">
-          <ion-icon name="logo-twitter"></ion-icon>
+    <ul class="social-icon text-center">
+        <li class="social-icon__item"><a class="social-icon__link" href="mailto:juaramuadaa@gmail.com">
+            <ion-icon name="mail-sharp"></ion-icon>
         </a></li>
-       <li class="social-icon__item"><a class="social-icon__link" href="#">
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-tiktok"></ion-icon>
+        </a></li>
+       <li class="social-icon__item"><a class="social-icon__link" href="https://instagram.com/juara_muda?igshid=MzRlODBiNWFlZA==">
           <ion-icon name="logo-instagram"></ion-icon>
         </a></li>
     </ul>
     <ul class="menu">
       <li class="menu__item"><a class="menu__link" href="/postingan">#KataMereka</a></li>
       <li class="menu__item"><a class="menu__link" href="/about">About Us</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Beasiswa</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Lomba</a></li>
+      <li class="menu__item"><a class="menu__link" href="/searchbeasiswa">Beasiswa</a></li>
+      <li class="menu__item"><a class="menu__link" href="/searchlomba">Lomba</a></li>
 
     </ul>
     <p>&copy;2023 #TheChallengers | All Rights Reserved</p>

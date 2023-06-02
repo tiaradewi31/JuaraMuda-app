@@ -9,6 +9,8 @@ use App\Http\Controllers\FormPostController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfilController;
+use App\Http\Controllers\BeasiswaController;
+use App\Http\Controllers\LombaController;
 use App\Models\Post;
 
 /*
@@ -51,13 +53,21 @@ Route::get('/postingan', [PostController::class, 'index'])->name('index')->middl
 
 Route::get('/postingan/{id}', [PostController::class, 'show'])->name('show')->middleware('auth');
 
-Route::get('/searchbeasiswa', function() {
-    return view('searchbeasiswa');
-});
+Route::get('/searchbeasiswa', [BeasiswaController::class, 'index'])->name('index')->middleware('auth');
 
-Route::get('/searchlomba', function () {
-    return view('searchlomba');
-});
+Route::get('/beasiswa', [BeasiswaController::class, 'create'])->name('create')->middleware('auth');
+
+Route::post('/beasiswa', [BeasiswaController::class, 'store'])->middleware('auth');
+
+Route::get('/searchbeasiswa/{id}', [BeasiswaController::class, 'show'])->name('show')->middleware('auth');
+
+Route::get('/searchlomba', [LombaController::class, 'index'])->name('index')->middleware('auth');
+
+Route::get('/lomba', [LombaController::class, 'create'])->name('create')->middleware('auth');
+
+Route::post('/lomba', [LombaController::class, 'store'])->name('store')->middleware('auth');
+
+Route::get('/searchlomba/{id}', [LombaController::class, 'show'])->name('show')->middleware('auth');
 
 Route::get('/katamereka',  [FormPostController::class, 'create'])->name('create')->middleware('auth');
 

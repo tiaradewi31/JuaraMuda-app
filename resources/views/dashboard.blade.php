@@ -83,7 +83,7 @@
                 <img src="img/buttonkatamereka.jpg" class="card-img-top" alt="...">
               </div>
               <div class="buttongo-center">
-                <a class="text-center"href="/katamereka">
+                <a class="text-center"href="/postingan">
                   <button class="btn btn-outline-go">#KataMereka</button>
                 </a>
               </div>

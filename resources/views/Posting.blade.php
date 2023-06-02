@@ -20,17 +20,18 @@
 <body>
     @include('navbar')
 
-    <div class="container mt-3">
-        <svg xmlns="http://www.w3.org/2000/svg" onclick="goBack()" width="35" height="35" color="#fffff"  class="bi bi-chevron-left" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
-        </svg>
-        <script>
-          function goBack() {
+    <div class="container" style="margin-top: 8%">
+      <svg xmlns="http://www.w3.org/2000/svg" onclick="goBack()" width="35" height="35" color="#fffff"  class="bi bi-chevron-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
+      </svg>
+      <script>
+        function goBack() {
           window.history.back();
-          }
-        </script>
-      </div>
-  <div class="container" style="padding-top: 70px;">
+        }
+      </script>
+    </div>
+    
+  <div class="container" style="padding-top: 65px;">
       <div class="container">
         <div class="text-center" style="color: white; margin-top: 50px; padding-top: 30px; font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Poppins?query=Poppins);">
          <h3><b> Scholarship and Competition Articles</b>
@@ -69,7 +70,7 @@
                   <div class="col-md-8">
                     <div class="card-body"  style="color: white;">
                       <h3 class="card-title">{{ $post->title }}</h3>
-                      <p><b>{{$user_info->uname}}</b> Berbagi Pengalaman<em>   {{$post->created_at->diffForHumans()}} </em></p>
+                      <p><b>{{$user_info->uname}}</b> Berbagi Pengalaman<em>  {{$post->created_at->diffForHumans()}} </em></p>
                       <p class="card-text">{{$post->excerpt}}</p>
                       <a href="/postingan/{{ $post->slug }}">Baca Selengkapnya</a>
                     </div>

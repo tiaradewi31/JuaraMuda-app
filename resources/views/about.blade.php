@@ -60,7 +60,7 @@
                   <span class="post">Developer</span>
                   <ul class="social">
                     <li><a href="https://instagram.com/hsnasyah?igshid=NTc4MTIwNjQ2YQ=="><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="aisyahusnalifah30@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="mailto:aisyahusnalifah30@gmail.com"><i class="fa fa-envelope"></i></a></li>
                   </ul>
                 </div>
             </div>

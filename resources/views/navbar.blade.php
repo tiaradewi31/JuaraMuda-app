@@ -11,7 +11,7 @@
                 <ul class="navbar-nav">
                     @auth
                     <li class="nav-item">
-                        <h4><a class="nav-link" style= "color : black; padding-top: 10px;" href="\profil"><b>Welcome Back, {{ auth()->user()->name }} </b></a></h4>
+                        <h4><a class="nav-link" style= "color : black; padding-top: 10px; color:#F6E7C0;" href="\profil"><b>Welcome Back, {{ auth()->user()->uname }} </b></a></h4>
                     </li>
                     @endauth
                 </ul>
