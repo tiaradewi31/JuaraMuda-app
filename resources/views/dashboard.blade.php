@@ -16,21 +16,25 @@
       .btn-outline-go{
         background-color: white;
         color: black;
-        border-color: rgb(136, 212, 255);
+        border-color: #213346;
         border-width: medium;
       }
       .btn-outline-go:hover {
-        background-color: rgb(136, 212, 255);
+        background-color: #213346;
         color: white;
-        border-color: black;
+        border-color: white;
         border-width: medium;
+      }
+      .buttongo-center{
+        padding-left: 140px;
+        padding-top: 10px;
       }
     </style>    
   <body>
 
   @include('navbar')
 
-    <div class="container" style="padding-top: 70px;">
+    <div class="container" style="padding-top: 70px; padding-bottom: 10px;">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -59,92 +63,35 @@
         <div class="row">
             <div class="col"><div class="card-center">
                 <img src="img/buttonbeasiswa.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Cari Beasiswa</a>
-                </div>
+              </div>
+              <div class="buttongo-center">
+                <a class="text-center"href="/searchbeasiswa">
+                  <button class="btn btn-outline-go">CARI BEASISWA</button>
+                </a>
               </div>
             </div>
             <div class="col"><div class="card-center">
                 <img src="img/buttonlomba.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Cari Lomba</a>
-                </div>
+              </div>
+              <div class="buttongo-center">
+                <a class="text-center"href="/searchlomba">
+                  <button class="btn btn-outline-go">CARI LOMBA</button>
+                </a>
+              </div>
+            </div>
+            <div class="col"><div class="card-center">
+                <img src="img/buttonkatamereka.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="buttongo-center">
+                <a class="text-center"href="/katamereka">
+                  <button class="btn btn-outline-go">#KataMereka</button>
+                </a>
               </div>
             </div>
       </div>
     </div>
 
-    <div class="container">
-    <div class="text-center" style="color: white; margin-top: 100px; padding-top: 30px; font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Poppins?query=Poppins); margin-bottom: 50px;">
-      <h3><b>#KataMereka</b>
-        <h3>
-    </div>
   </div>
-
-  <div class="custom_container" style="background-color: #213346; border-radius: 60px; padding-top: 5%; padding-bottom: 5%; margin-left: 5%; margin-right: 5%; margin-bottom: 5%; font-family: 'Pridi'; src: url(https://fonts.google.com/specimen/Pridi?query=pridi);">
-    <div class="container text-justify"> 
-      <div class="row row-cols">
-        <div class="col">
-            <div class="card-body" style="background-color: #213346;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="img/buttonbeasiswa.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body"  style="color: white;">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-      <div class="row row-cols">
-        <div class="col">
-            <div class="card-body" style="background-color: #213346;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="img/buttonbeasiswa.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body"  style="color: white;">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-      <div class="row row-cols">
-        <div class="col">
-            <div class="card-body" style="background-color: #213346;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="img/buttonbeasiswa.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body"  style="color: white;">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-      <ul class="menu" style="center">
-        <li class="menuu" >
-          <a class="nav-link" aria-current="page"  style= "color : white; padding-right: 20px; padding-top: 50px; text-decoration: none; list-style-type: none;" href="/postingan"><b>See more in #KataMereka</b></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  </div>
-
-    @include ('topbutton')
 
     @include('footer')
 
