@@ -39,13 +39,21 @@
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/beasiswa.jpg" class="d-block w-100" alt="...">
+                    <img src="img/carousel1.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/lomba.jpg" class="d-block w-100" alt="...">
+                    <img src="img/carousel2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel4.png" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -62,29 +70,20 @@
     <div class="container pt-4">
         <div class="row">
             <div class="col"><div class="card-center">
-                <img src="img/buttonbeasiswa.png" class="card-img-top" alt="...">
-              </div>
-              <div class="buttongo-center">
-                <a class="text-center"href="/searchbeasiswa">
-                  <button class="btn btn-outline-go">CARI BEASISWA</button>
+                <a class="buttongambar"href="/searchbeasiswa">
+                  <img src="img/caribeasiswa.png" class="card-img-top" alt="...">
                 </a>
               </div>
             </div>
             <div class="col"><div class="card-center">
-                <img src="img/buttonlomba.jpg" class="card-img-top" alt="...">
-              </div>
-              <div class="buttongo-center">
-                <a class="text-center"href="/searchlomba">
-                  <button class="btn btn-outline-go">CARI LOMBA</button>
+                <a class="buttongambar"href="/searchlomba">
+                  <img src="img/carilomba.png" class="card-img-top" alt="...">
                 </a>
               </div>
             </div>
             <div class="col"><div class="card-center">
-                <img src="img/buttonkatamereka.jpg" class="card-img-top" alt="...">
-              </div>
-              <div class="buttongo-center">
-                <a class="text-center"href="/postingan">
-                  <button class="btn btn-outline-go">#KataMereka</button>
+                <a class="buttongambar"href="/katamereka">
+                  <img src="img/katamereka.png" class="card-img-top" alt="...">
                 </a>
               </div>
             </div>
