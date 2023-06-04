@@ -80,7 +80,7 @@
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="box16">
-              <img class="pic-1" src="img/Rei.jpg">
+              <img class="pic-1" src="img/Reisa.jpg">
                 <div class="box-content">
                   <h3 class="title">Reisa Aulia Sodikin</h3>
                   <span class="post">Scrum Master</span>

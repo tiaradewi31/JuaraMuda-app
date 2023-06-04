@@ -38,13 +38,13 @@
   </script>
 </div>
     <div class="container text-center mt-5">
-      <h1 class="text-center" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF;">Hai, Welcome</h1>
+      <h1 class="text-center" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF;"><font face="Century Gothic">Hai, Welcome</font></h1>
       <br>
-        <h1 class="v mt-3" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF";><b>{{ Auth::user()->uname }}</b></h1>
-          <h3 class="v mt-3" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF";>{{ Auth::user()->name }}</h3>
+        <h1 class="v mt-3" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF";><font face="Century Gothic"><b>{{ Auth::user()->uname }}</b></font></h1>
+          <h3 class="v mt-3" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF";><font face="Century Gothic">{{ Auth::user()->name }}</font></h3>
             <br>
             <br>
-          <h4 class="v mt-3" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF";>{{ Auth::user()->email }}</h4>
+          <h4 class="v mt-3" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF";><font face="Century Gothic">{{ Auth::user()->email }}</font></h4>
 
         
           <div class="card mt-5 text-center" style="margin:auto; background-color: #AF4A61; border-radius: 25px; width:200px; font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF">
@@ -52,7 +52,7 @@
             <a href="{{ route('logout') }}" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #213346">
               <div class="d-flex align-items-center pb-1" id="tooltips-container">
                 <div class="w-100 ms-2">
-                  <h4 class="mb-1" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #F6E7C0;">Log Out</h4>
+                  <h4 class="mb-1" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #F6E7C0;"><font face="Century Gothic">Log Out</font></h4>
                 </div>
                 <i class="mdi mdi-chevron-right h2"></i>
               </div>

@@ -44,28 +44,7 @@
                 </div>
             </div>
         </div>
-    </div>
-      <!-- <div class="container mb-5" style="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FBFCFC;">
-        <div class="col-md-4">
-          @if($lomba->image)
-          <div class="Logo text-center" style="max-heigth :200px; overflow:hidden;">
-            <img src="{{asset('image/' . $lomba->image)}}" class="img-fluid rounded-start mt-4" alt="...">
-          </div>
-          @else
-            <img src="img/buttonlomba.png" class="img-fluid rounded-start" alt="...">
-          @endif
-        </div>
-          <h1 class="mt-4 mb-4 text-center"><b>{{$lomba->title}}</b></h1> -->
-            <!-- <a href="/lombaingan/{{$lomba->slug}}/delete" class="btn btn-danger">Hapus lomba</a> -->
-            <!-- <form action="/lombaingan/{{$lomba->slug}}" method="lomba" class="d-inline">
-              @method('delete')
-              @csrf
-              <button type="button" class="btn btn-danger" onclick="return confirm('Are You Sure?')">Delete</button>
-            </form> -->
-            <!-- <a href="/lombaingan/{{$lomba->slug}}/edit" class="badge bg danger"> <button type="button" class="btn btn-danger">Delete</button></a> -->
-            <!-- {{ $lomba->lomba}}
-      </div> -->
-
+    </div>      
       @include('topbutton')
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

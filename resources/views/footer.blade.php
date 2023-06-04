@@ -73,7 +73,7 @@
             <ion-icon name="mail-sharp"></ion-icon>
         </a></li>
         <li class="social-icon__item"><a class="social-icon__link" href="#">
-            <ion-icon name="logo-tiktok"></ion-icon>
+            <ion-icon name="logo-whatsapp"></ion-icon>
         </a></li>
        <li class="social-icon__item"><a class="social-icon__link" href="https://instagram.com/juara_muda?igshid=MzRlODBiNWFlZA==">
           <ion-icon name="logo-instagram"></ion-icon>

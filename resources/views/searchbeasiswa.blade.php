@@ -45,7 +45,7 @@
 
   @include('navbar')
 
-  <div class="container" style="margin-top: 8%">
+  <div class="container" style="margin-top: 5%">
         <svg xmlns="http://www.w3.org/2000/svg" onclick="goBack()" width="35" height="35" color="#fffff"  class="bi bi-chevron-left" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
         </svg>
@@ -56,9 +56,9 @@
         </script>
       </div>
 
-    <div class="container" style="padding-top: 5px;">
+    <div class="container" style="padding-top: 65px;">
       <div class="container">
-        <div class="text-center" style="color: white; margin-top: 90px; padding-top: 25px; font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Poppins?query=Poppins);">
+        <div class="text-center" style="color: white; margin-top: 50px; padding-top: 30px; font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Poppins?query=Poppins);">
          <h3><b>CARI BEASISWA YUK!</b>
             <h3>
             <div>
