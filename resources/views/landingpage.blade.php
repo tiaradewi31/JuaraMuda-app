@@ -55,7 +55,7 @@
                     <h1>Once</h1>
                 </div>
                 <p class="text">
-                    “Jangan Biarkan Impianmu Terhenti, Raihlah Masa Depanmu dengan JuaraMuda!”
+                    “Jangan Biarkan Impianmu Terhenti, Raihlah Masa Depanmu bersama JuaraMuda!”
                 </p>
                 <div class="cta">
                     <a href="#" class="btn">What is JuaraMuda?</a>
