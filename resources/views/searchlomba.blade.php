@@ -69,7 +69,7 @@
         </div>
         <div class="buttongogo-center">
           <a class="text-center"href="/lomba">
-            <button class="btn btn-outline-go">UPLOAD INFORMASI LOMBA</button>
+            <button class="btn btn-outline-go">Upload Informasi Lomba</button>
           </a>
         </div>
      </div>

@@ -82,7 +82,7 @@
               </div>
             </div>
             <div class="col"><div class="card-center">
-                <a class="buttongambar"href="/katamereka">
+                <a class="buttongambar"href="/postingan">
                   <img src="img/katamereka.png" class="card-img-top" alt="...">
                 </a>
               </div>

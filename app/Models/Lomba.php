@@ -20,7 +20,7 @@ class Lomba extends Model
 
     public function excerpt()
     {
-        return Str::limit($this->katamu, Post::EXCERPT_LENGTH);
+        return Str::limit($this->lomba, Post::EXCERPT_LENGTH);
     }
 
     public function sluggable(): array

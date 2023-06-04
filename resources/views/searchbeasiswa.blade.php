@@ -68,11 +68,11 @@
                 </form>
             </div>
         </div>
-        <div class="buttongogo-center">
-          <a class="text-center"href="/beasiswa">
-            <button class="btn btn-outline-go">UPLOAD INFORMASI BEASISWA</button>
+        <div class="upload text-center mb-5" style="margin-top: 3%;">
+          <a class="text-center upload" style="margin-top: 3%; background-color: #9a465e" href="/beasiswa">
+            <button class="btn btn-outline-go" >Upload Informasi Beasiswa</button>
           </a>
-        </div>
+        </div>        
      </div>
 
 

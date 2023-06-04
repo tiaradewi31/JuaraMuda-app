@@ -45,9 +45,9 @@
         </div>
         <div class="upload text-center mb-5" style="margin-top: 3%;">
           <a class="text-center upload" style="margin-top: 3%; background-color: #9a465e" href="/katamereka">
-          <button class="btn btn-outline-go" >Bagi Pengalamanmu di #KataMereka</button>
+            <button class="btn btn-outline-go">Bagi Pengalamanmu di #KataMereka</button>
           </a>
-        </div>
+        </div> 
       </div>
 
       <div class="custom_container" style="background-color: #213346; border-radius: 40px; padding-top: 3%; padding-bottom: 3%; margin-left: 5%; margin-right: 5%; margin-bottom: 5%; font-family: 'Pridi'; src: url(https://fonts.google.com/specimen/Pridi?query=pridi);">

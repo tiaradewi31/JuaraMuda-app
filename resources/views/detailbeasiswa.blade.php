@@ -26,26 +26,43 @@
           }
         </script>
       </div>
-      <div class="container mb-5" style="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FBFCFC;">
+      <div class="container mt-5 mb-5">
+        <div class="row justify-content-center" >
+            <div class="col-md-11">
+                <div class="card border-0 shadow-sm rounded" style="background: #F6E7C0">
+                    <div class="card-body" style="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #213346;">
+                        <img src="{{asset('image/' . $beasiswa->image)}}" class="w-100 rounded">
+                        <hr>
+                        <h1 class="text-center" style="color: #213346;"><font face="Century Gothic"><b>{{ $beasiswa->title }}</b></font></h1>
+                        
+                        <h5 class="tmt-3" style="color: #213346;">
+                        <font face="Century Gothic">{!! $beasiswa->beasiswa !!}</font>
+                    </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- <div class="container mb-5" style="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FBFCFC;">
         <div class="col-md-4">
           @if($beasiswa->image)
-          <div class="Logo text-center" style="max-heigth :200px; overflow:hidden;">
-            <img src="{{asset('image/' . $beasiswa->image)}}" class="img-fluid rounded-start mt-4" alt="...">
+          <div class="text-center" style="max-heigth :500px; overflow:hidden;">
+            <img src="{{asset('image/' . $beasiswa->image)}}" class="col-10 mx-auto text-center" alt="...">
           </div>
           @else
             <img src="img/buttonbeasiswa.png" class="img-fluid rounded-start" alt="...">
           @endif
         </div>
           <h1 class="mt-4 mb-4 text-center"><b>{{$beasiswa->title}}</b></h1>
-            <!-- <a href="/beasiswaingan/{{$beasiswa->slug}}/delete" class="btn btn-danger">Hapus beasiswa</a> -->
+             <a href="/beasiswaingan/{{$beasiswa->slug}}/delete" class="btn btn-danger">Hapus beasiswa</a> -->
             <!-- <form action="/beasiswaingan/{{$beasiswa->slug}}" method="beasiswa" class="d-inline">
               @method('delete')
               @csrf
               <button type="button" class="btn btn-danger" onclick="return confirm('Are You Sure?')">Delete</button>
             </form> -->
             <!-- <a href="/beasiswaingan/{{$beasiswa->slug}}/edit" class="badge bg danger"> <button type="button" class="btn btn-danger">Delete</button></a> -->
-            {{ $beasiswa->beasiswa}}
-      </div>
+            <!-- {{ $beasiswa->beasiswa}} -->
+      <!-- </div> -->
 
       @include('topbutton')
 
