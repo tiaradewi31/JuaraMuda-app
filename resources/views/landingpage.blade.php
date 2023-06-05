@@ -84,21 +84,67 @@
       </div> -->
 
 <!-- what is juaramuda? start -->
-<section class="about" id="about">
-
-      <h1 class="heading"><span>What Is JuaraMuda?</span></h1>
-      <div class="row">
-        <div class="photo-container">
-          <img src="img/juara.png" alt="juara">
-          <h3></h3>
+<section class="what">
+    <div class="container">
+        <div class="box-choose">
+            <div class="box">
+                <img src="img/juara.png" alt="">
+            </div>
+            <div class="box">
+                <h1>What is Juara Muda?</h1><br>
+                <h4>JuaraMuda adalah Platform yang menyediakan informasi aktual, akurat, dan terpercaya mengenai beasiswa dan lomba baik yang diselenggarakan oleh instansi maupun universitas</h4><br>
+            </div>
         </div>
-      </div>
-
+    </div>
 </section>
 <!-- what is juaramuda? done -->
 
+<!-- insight start -->
+<section class="popular">
+    <div class="container">
+        <div class="box-popular">
+            <div class="box">
+                <img src="img/insight1.png" alt=""/>
+                <h1>Beasiswa</h1>
+                <p>Teach you how to resolve an education problem</p>
+            </div>
+            <div class="box">
+                <img src="img/insight2.png" alt=""/>
+                <h1>Perlombaan</h1>
+                <p>Teach you how to resolve an education problem</p>
+            </div>
+            <div class="box">
+                <img src="img/insight3.png" alt=""/>
+                <h1>#KataMereka</h1>
+                <p>Teach you how to resolve an education problem</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- insight done -->
+
+<!-- get start -->
+<section class="hero">
+        <div class="container">
+            <div class="box-hero">
+                <div class="box">
+                <h1>Get Started with JuaraMuda</h1>
+                </div>
+            </div>
+
+            <div class="ca">
+                    <a href="#" class="btnn">Get Started</a>
+            </div>
+            
+        </div>
+    </section>
+<!-- get done -->
     </div>
   </main>
+
+  @include ('topbutton')
+
   @include('footer')
+
 </body>
 </html>
