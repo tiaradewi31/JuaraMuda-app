@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/Logo.png" type = "image/x-icon">    
-    <title>Detail Lomba</title>
+    <title>Upload Lomba</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -35,14 +35,14 @@
 
     <div class="d-flex align-items-lg-center py-4 flex-column">
         <img src="img/logotoga.png" alt="" width="50px;">
-        <h2 style="padding: 1% 0% 1% 5%; font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #F6E7C0;">Upload Program Beasiswa</h2>
+        <h2 style="padding: 1% 0% 1% 5%; font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #F6E7C0;">Upload Program Lomba</h2>
     </div>
 
     <form method="POST" action="" enctype="multipart/form-data">
     @csrf
       <div class="mb-3" style="color: #F6E7C0;">
-        <label for="title" class="form-label">Program Beasiswa</label>
-        <input class="form-control" name="title" id="title" placeholder="Beasiswa Jalan yang Benar" value="{{ old('title') }}" required>
+        <label for="title" class="form-label">Program Lomba</label>
+        <input class="form-control" name="title" id="title" placeholder="Masukkan Program Lomba" value="{{ old('title') }}" required>
         <div class="invalid-feedback" style="padding-bottom: 2%;">
           Wajib diisi
         </div>
@@ -71,7 +71,7 @@
       </div> -->
       <div class="mb-3">
         <label for="lomba" class="form-label" style="color: #F6E7C0;">Detail Lomba</label>
-        <textarea class="form-control" rows="10" id="lomba" input="lomba"  placeholder="Masukan Persyaratan, Tanggal Pelaksanaan dan Alur Pendaftaran" name="lomba" value="{{ old('lomba') }}" require></textarea>
+        <textarea class="form-control" rows="10" id="lomba" input="lomba"  placeholder="Masukan Persyaratan, Tanggal Pelaksanaan dan Alur Pendaftaran" name="lomba" value="{{ old('lomba') }}" require style="white-space: pre-line;"></textarea>
       </div>
       <div class="hstack gap-3" style="padding-top: 1%; padding-bottom:5%;">
         <button class="btn btn btn-secondary btn-lg" type="submit"> Upload </button>

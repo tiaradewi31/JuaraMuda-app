@@ -39,7 +39,7 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/landingpage', function () {
+Route::get('/', function () {
     return view('landingpage');
 });
 

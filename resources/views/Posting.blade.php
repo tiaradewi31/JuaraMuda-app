@@ -12,8 +12,20 @@
 
 <style>
     body{
-        background: linear-gradient(to Bottom, #213346, #9a465e);
-        background-size: cover;
+      background: linear-gradient(to Bottom, #213346, #9a465e);
+      background-size: cover;
+    }
+    .btn-outline-go{
+      background-color: white;
+      color: black;
+      border-color: #213346;
+      border-width: medium;
+    }
+    .btn-outline-go:hover {
+      background-color: #9a465e;
+      color: white;
+      border-color: white;
+      border-width: medium;
     }
 </style>
 

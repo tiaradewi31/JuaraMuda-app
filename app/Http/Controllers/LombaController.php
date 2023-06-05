@@ -67,6 +67,7 @@ class LombaController extends Controller
         // $lomba->category_id = $request->category_id;
         $lomba->lomba = $request->lomba;
         $lomba->save();
+        // Mail::to($)
 
         return redirect('/searchlomba');
     }

@@ -11,7 +11,6 @@
 <style>
       body{
           background: linear-gradient(to bottom, #213346, #9a465e);
-          background-size: cover;          
       }
       .btn-outline-go{
         background-color: white;
@@ -27,7 +26,7 @@
       }
 </style>
 <body>
-  <main>
+  <!-- <main> -->
     <div class="big-wrapper">
       <header>
         <div class="container">
@@ -124,27 +123,29 @@
 <!-- insight done -->
 
 <!-- get start -->
-<section class="hero">
-        <div class="container">
+<!-- <div class="hero">
+        <div class="container text-center">
             <div class="box-hero">
                 <div class="box">
                 <h1>Get Started with JuaraMuda</h1>
                 </div>
             </div>
 
-            <div class="ca">
-                    <a href="#" class="btnn">Get Started</a>
+            <div class="ca text-center">
+                    <a href="/Login" class="btnn">Get Started</a>
             </div>
             
         </div>
-    </section>
-<!-- get done -->
     </div>
-  </main>
+get done -->
+    </div>
+ 
 
-  @include ('topbutton')
+  <!-- </main> -->
 
-  @include('footer')
+@include ('topbutton')
+
+@include('footer')
 
 </body>
 </html>

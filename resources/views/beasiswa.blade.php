@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/Logo.png" type = "image/x-icon">    
-    <title>#KataMereka.Beasiswa</title>
+    <title>Upload Beasiswa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -42,7 +42,7 @@
     @csrf
       <div class="mb-3" style="color: #F6E7C0;">
         <label for="title" class="form-label">Program Beasiswa</label>
-        <input class="form-control" name="title" id="title" placeholder="Beasiswa Jalan yang Benar" value="{{ old('title') }}" required>
+        <input class="form-control" name="title" id="title" placeholder="Masukkan Program Beasiswa" value="{{ old('title') }}" required>
         <div class="invalid-feedback" style="padding-bottom: 2%;">
           Wajib diisi
         </div>

@@ -51,7 +51,7 @@
                     </div>
                     <div class="form-floating" style="margin-top: 2%">
                         <input type="password" class="form-control rounded-bottom" name="password" id="password" required
-                            placeholder="Password">
+                            placeholder="Password | 8 karakter">
                         <label for="password">Password</label>
                     </div>
                     <button class="w-100 btn btn-lg mt-4" style="background-color: #213346; font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #FFFFFF; " type="submit">Buat Akun</button>

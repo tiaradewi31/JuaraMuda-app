@@ -28,6 +28,7 @@
           }
         </script>
       </div>
+      <?php $user_info = App\Models\User::find($lomba->user_id); ?>
       <div class="container mt-5 mb-5">
         <div class="row justify-content-center" >
             <div class="col-md-11">
@@ -36,9 +37,11 @@
                         <img src="{{asset('image/' . $lomba->image)}}" class="w-100 rounded">
                         <hr>
                         <h1 class="text-center" style="color: #213346;"><font face="Century Gothic"><b>{{ $lomba->title }}</b></font></h1>
-                        
+                        <hr>
+                        <font face="Century Gothic"><h5>  by <em><b>{{$user_info->uname}}</b></em></h5></font>
+                        <br>
                         <h5 class="tmt-3" style="color: #213346;">
-                        <font face="Century Gothic"> {!! $lomba->lomba !!}</font>
+                        <font face="Century Gothic"> {!! nl2br($lomba->lomba) !!}</font>
                         </h5>
                     </div>
                 </div>

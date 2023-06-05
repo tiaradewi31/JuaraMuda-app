@@ -52,7 +52,7 @@
             <a href="{{ route('logout') }}" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #213346">
               <div class="d-flex align-items-center pb-1" id="tooltips-container">
                 <div class="w-100 ms-2">
-                  <h4 class="mb-1" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #F6E7C0;"><font face="Century Gothic">Log Out</font></h4>
+                  <h4 class="mb-1" style ="font-family: 'Poppins', Sans-serif; src: url(https://fonts.google.com/specimen/Montserrat?query=Montserrat); color: #F6E7C0;"><b><font face="Century Gothic">Log Out</font></b></h4>
                 </div>
                 <i class="mdi mdi-chevron-right h2"></i>
               </div>

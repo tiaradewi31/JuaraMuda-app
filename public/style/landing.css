@@ -248,7 +248,7 @@ header .hero {
   justify-content: center;
 }
 
-.ca .btnn {
+.hero .ca .btnn {
   display: inline-block;
   padding: 0.9rem 1.9rem;
   color: #213346 !important;
@@ -259,7 +259,8 @@ header .hero {
   align-items: center;
 }
 
-.ca .btnn:hover {
+.hero .ca .btnn:hover {
   background-color: #AF4A61;
   transform: scale(1) !important;
 }
+

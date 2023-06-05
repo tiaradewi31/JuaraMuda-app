@@ -27,6 +27,7 @@
           }
         </script>
       </div>
+      <?php $user_info = App\Models\User::find($post->user_id); ?>
       <div class="container mt-5 mb-5">
         <div class="row justify-content-center" >
             <div class="col-md-11">
@@ -36,8 +37,10 @@
                         <hr>
                         <h1 class="text-center" style="color: #213346;"><font face="Century Gothic"><b>{{ $post->title }}</b></font></h1>
                         <hr>
+                        <font face="Century Gothic"><h5>  by <em><b>{{$user_info->uname}}</b></em></h5></font>
+                        <br>
                         <h5 class="tmt-3" style="color: #213346;">
-                          <font face="Century Gothic">{!! $post->katamu !!}</<font face="Century Gothic">font>
+                          <font face="Century Gothic">{!! nl2br($post->katamu) !!}</<font face="Century Gothic">font>
                         </h5>
                     </div>
                 </div>
