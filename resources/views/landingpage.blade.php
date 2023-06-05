@@ -106,17 +106,17 @@
             <div class="box">
                 <img src="img/insight1.png" alt=""/>
                 <h1>Beasiswa</h1>
-                <p>Teach you how to resolve an education problem</p>
+                <p>Kumpulan informasi beasiswa terbaik bagi mahasiswa, baik dalam negeri maupun luar negeri</p>
             </div>
             <div class="box">
                 <img src="img/insight2.png" alt=""/>
                 <h1>Perlombaan</h1>
-                <p>Teach you how to resolve an education problem</p>
+                <p>Kumpulan informasi Kompetisi atau perlombaan bagi mahasiswa, dalam negeri&luar negeri </p>
             </div>
             <div class="box">
                 <img src="img/insight3.png" alt=""/>
                 <h1>#KataMereka</h1>
-                <p>Teach you how to resolve an education problem</p>
+                <p>Kumpulan Tips atau cerita pengalaman dari mahasiswa yang telah lolos beasiswa&lomba</p>
             </div>
         </div>
     </div>
